@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-14T12:43:53.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="8Jq0S5XgAHqgUfdieQVB" version="24.5.4" type="device" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-06-18T14:04:01.144Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="f5zntFhXRbV0BSaR5u-U" version="24.5.5" type="device" pages="7">
   <diagram name="Página-1" id="_S_w9w5pg14a1K505Iac">
     <mxGraphModel dx="2390" dy="1303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -240,14 +240,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AyRA6ZqEg2DmLlDodCSl" name="Página-2">
-    <mxGraphModel dx="2049" dy="1117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4hy7FEDMK645bhSUUood-1" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="271" y="90" width="280" height="510" as="geometry" />
         </mxCell>
-        <mxCell id="4hy7FEDMK645bhSUUood-3" value="RAZÃO SOCIAL:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Comic Sans MS;fontSize=14;" parent="1" vertex="1">
+        <mxCell id="4hy7FEDMK645bhSUUood-3" value="NOME:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Comic Sans MS;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="278.75" y="190" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4hy7FEDMK645bhSUUood-4" value="TELEFONE:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontStyle=1;fontSize=14;" parent="1" vertex="1">
