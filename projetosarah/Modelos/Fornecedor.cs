@@ -1,4 +1,4 @@
-namespace projetosarah
+namespace Modelos
 public class Fornecedor:Pessoas
 {
 string email;

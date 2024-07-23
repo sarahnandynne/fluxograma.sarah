@@ -1,6 +1,6 @@
-namespace projetosarah
+namespace Modelos
 
-public class Pessoas
+public class Pessoas:Registro
 {
     string nome;
     string telefone;
@@ -22,11 +22,11 @@ public class Pessoas
     {
         return telefone;
     }
-    public void SetId (string I)
+    public void SetId (int I)
     {
         id = I;
     }
-    public string GetId ()
+    public int GetId ()
     {
         return = id
     }

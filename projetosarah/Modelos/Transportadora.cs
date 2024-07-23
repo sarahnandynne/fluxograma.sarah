@@ -1,4 +1,4 @@
-namespace projetosarah
+namespace Modelos
 public class Transportadora:Pessoas
 {
 string CNPJ;
