@@ -1,6 +1,8 @@
+using Modelos;
+
 namespace Controles
 {
-    public class ControleTransportadora:ControleBase
+    public class ControleFornecedorMP:ControleBase
     {
         public override void Criar (Registro o)
         {

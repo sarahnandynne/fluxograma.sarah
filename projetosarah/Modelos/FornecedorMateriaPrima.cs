@@ -1,22 +1,24 @@
-namespace Modelos
-public class FornecedorMatériaPrima:Registro
-int idF;
-int idM;
+namespace Modelos;
+
+public class FornecedorMateriaPrima:Registro
 {
-public void SetidF (int IF)
-{
-    idF= IF;
-}
-public int GetidF ()
-{
-    return = idF;
-}
-public void SetidM (int IM)
-{
-    idM = IM;
-}
-public int GetCPF ()
-{
-    return = idM;
-}
+    int idfornecedor;
+    int idmateriaprima;
+
+    public void SetidF (int IF)
+    {
+        idfornecedor= IF;
+    }
+    public int GetidF ()
+    {
+        return idfornecedor;
+    }
+    public void SetidM (int IM)
+    {
+        idmateriaprima = IM;
+    }
+    public int GetCPF ()
+    {
+        return idmateriaprima;
+    }
 }

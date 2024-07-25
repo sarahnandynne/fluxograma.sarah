@@ -1,3 +1,5 @@
+using Modelos;
+
 namespace Controles
 {
     public class ControlePedido:ControleBase

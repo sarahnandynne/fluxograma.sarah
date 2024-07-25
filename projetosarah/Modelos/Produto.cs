@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 
 public class Produto:Registro
 {
@@ -21,7 +21,7 @@ public class Produto:Registro
     }
     public int GetId ()
     {
-        return = id;
+        return id;
     }
     public void SetUnidade (string U)
     {
@@ -29,7 +29,7 @@ public class Produto:Registro
     }
     public string GetUnidade()
     {
-        return = unidade;
+        return unidade;
     }
      public void SetValor (string V)
     {
@@ -37,6 +37,6 @@ public class Produto:Registro
     }
     public string GetValor()
     {
-        return = valor;
+        return valor;
     }
 }

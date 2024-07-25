@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 public class Unidades:Pessoas
 {
     string nome;

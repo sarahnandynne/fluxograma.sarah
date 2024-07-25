@@ -1,13 +1,13 @@
-namespace Modelos
+namespace Modelos;
 
-public class Pedido;Registro
+public class Pedido:Registro
 {
     int código;
     int id;
     int quantidade;
     string cor;
     string endereco;
-    string valor total;
+    string valortotal;
 
     public void SetCódigo (int C)
     {
@@ -23,7 +23,7 @@ public class Pedido;Registro
     }
     public int GetId ()
     {
-        return = id
+        return id;
     }
     public void SetQuantidade(int Q)
     {
@@ -39,7 +39,7 @@ public class Pedido;Registro
     }
     public string GetCor()
     {
-        return = cor;
+        return cor;
     }
      public void SetEndereco (string E)
     {
@@ -47,15 +47,15 @@ public class Pedido;Registro
     }
     public string GetEndereco()
     {
-        return = endereco;
+        return endereco;
     }
     
      public void SetValorTotal (string V)
     {
-        valor total = V;
+        valortotal = V;
     }
     public string GetValorTotal()
     {
-        return = valor total;
+        return valortotal;
     }
 }

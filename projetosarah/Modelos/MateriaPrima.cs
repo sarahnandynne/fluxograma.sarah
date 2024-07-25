@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 
 public class MatériaPrima:Registro
 {
@@ -20,7 +20,7 @@ public class MatériaPrima:Registro
     }
     public int GetId ()
     {
-        return = id;
+        return id;
     }
     public void SetCódigo (int C)
     {
@@ -36,6 +36,6 @@ public class MatériaPrima:Registro
     }
     public string GetUnidade()
     {
-        return = unidade;
+        return unidade;
     }
 }

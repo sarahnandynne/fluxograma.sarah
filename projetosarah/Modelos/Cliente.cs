@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 public class Cliente:Pessoas
 {
 string endereco;
@@ -10,7 +10,7 @@ public void SetEndereco (string E)
 }
 public string GetEndereco ()
 {
-    return = endereco;
+    return endereco;
 }
 public void SetCPF (string C)
 {
@@ -18,6 +18,6 @@ public void SetCPF (string C)
 }
 public string GetCPF ()
 {
-    return = CPF;
+    return CPF;
 }
 }

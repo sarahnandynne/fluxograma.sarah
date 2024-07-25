@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 
 public class Pessoas:Registro
 {
@@ -28,6 +28,6 @@ public class Pessoas:Registro
     }
     public int GetId ()
     {
-        return = id
+        return id;
     }
 }

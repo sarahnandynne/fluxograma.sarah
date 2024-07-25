@@ -1,6 +1,8 @@
+using Modelos;
+
 namespace Controles
 {
-    public class ControleProduto:ControleBase
+    public class ControleEstoque:ControleBase
     {
         public override void Criar (Registro o)
         {

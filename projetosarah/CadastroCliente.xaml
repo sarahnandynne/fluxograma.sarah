@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetosarah.CadastroCliente"
+             Title="Cadastro de Cliente">
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Frame BorderColor="Black" CornerRadius="20" Padding="10">
+                <StackLayout>
+                    <Frame BackgroundColor="Orange" CornerRadius="10" Padding="5" HorizontalOptions="Center">
+                        <Label Text="CADASTRO DE CLIENTE" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </Frame>
+
+                    <StackLayout Padding="10">
+                        <Label Text="NOME:"/>
+                        <Entry x:Name="NomeEntry"/>
+
+                        <Label Text="TELEFONE:"/>
+                        <Entry x:Name="TelefoneEntry"/>
+
+                        <Label Text="ENDEREÇO:"/>
+                        <Entry x:Name="EnderecoEntry"/>
+
+                        <Label Text="CPF:"/>
+                        <Entry x:Name="CpfEntry"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
+                        <Button Text="CONFIRMAR" BackgroundColor="LightGreen" Clicked="OnConfirmarClicked" Margin="5"/>
+                        <Button Text="ATUALIZAR" BackgroundColor="LightBlue" Clicked="OnAtualizarClicked" Margin="5"/>
+                    </StackLayout>
+                    
+                    <Button Text="VOLTAR" BackgroundColor="LightYellow" Clicked="OnVoltarClicked" Margin="5" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

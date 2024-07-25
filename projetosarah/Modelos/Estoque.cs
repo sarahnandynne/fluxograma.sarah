@@ -1,4 +1,4 @@
-namespace Modelos
+namespace Modelos;
 
 public class Estoque:Registro
 {
@@ -21,7 +21,7 @@ public class Estoque:Registro
     }
     public int GetId ()
     {
-        return = id;
+        return id;
     }
     public void SetQuantidade(int Q)
     {
@@ -37,6 +37,6 @@ public class Estoque:Registro
     }
     public string GetUnidade ()
     {
-        return = unidade;
+        return unidade;
     }
 }

@@ -1,11 +1,11 @@
-namespace Modelos
+namespace Modelos;
 
 public class Venda:Registro
 {
     string produto;
     int id;
     int quantidade;
-    string unidade de medida;
+    string unidadedemedida;
     string valor;
 
     public void SetProduto (string P)
@@ -22,7 +22,7 @@ public class Venda:Registro
     }
     public int GetId ()
     {
-        return = id;
+        return id;
     }
     public void SetQuantidade(int Q)
     {
@@ -34,11 +34,11 @@ public class Venda:Registro
     }
     public void SetUnidadeDeMedida (string U)
     {
-        unidade de medida = U;
+        unidadedemedida = U;
     }
     public string GetUnidadeDeMedida()
     {
-        return = unidade de medida;
+        return unidadedemedida;
     }
      public void SetValor (string V)
     {
@@ -46,6 +46,6 @@ public class Venda:Registro
     }
     public string GetValor()
     {
-        return = valor;
+        return valor;
     }
 }
