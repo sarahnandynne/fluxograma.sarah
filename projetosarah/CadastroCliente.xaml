@@ -2,37 +2,58 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetosarah.CadastroCliente"
-             Title="Cadastro de Cliente">
-    <ContentPage.Content>
-        <StackLayout Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Frame BorderColor="Black" CornerRadius="20" Padding="10">
-                <StackLayout>
-                    <Frame BackgroundColor="Orange" CornerRadius="10" Padding="5" HorizontalOptions="Center">
-                        <Label Text="CADASTRO DE CLIENTE" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                    </Frame>
+             BackgroundColor="White"
+             Padding="10">
 
-                    <StackLayout Padding="10">
-                        <Label Text="NOME:"/>
-                        <Entry x:Name="NomeEntry"/>
-
-                        <Label Text="TELEFONE:"/>
-                        <Entry x:Name="TelefoneEntry"/>
-
-                        <Label Text="ENDEREÇO:"/>
-                        <Entry x:Name="EnderecoEntry"/>
-
-                        <Label Text="CPF:"/>
-                        <Entry x:Name="CpfEntry"/>
-                    </StackLayout>
-
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
-                        <Button Text="CONFIRMAR" BackgroundColor="LightGreen" Clicked="OnConfirmarClicked" Margin="5"/>
-                        <Button Text="ATUALIZAR" BackgroundColor="LightBlue" Clicked="OnAtualizarClicked" Margin="5"/>
-                    </StackLayout>
-                    
-                    <Button Text="VOLTAR" BackgroundColor="LightYellow" Clicked="OnVoltarClicked" Margin="5" HorizontalOptions="Center"/>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Frame BackgroundColor="LightGray" Padding="20" CornerRadius="10">
+            <StackLayout>
+                <Frame BackgroundColor="#FBD5B5" Padding="10" CornerRadius="10">
+                    <Label Text="CADASTRO DE CLIENTE"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center" />
+                </Frame>
+                <StackLayout Padding="0,20,0,0" Spacing="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="NOME:" VerticalOptions="Center"/>
+                        <Entry Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="TELEFONE:" VerticalOptions="Center"/>
+                        <Entry Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="ENDEREÇO:" VerticalOptions="Center"/>
+                        <Entry Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="CPF:" VerticalOptions="Center"/>
+                        <Entry Grid.Column="1"/>
+                    </Grid>
                 </StackLayout>
-            </Frame>
-        </StackLayout>
-    </ContentPage.Content>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,20,0,0" Spacing="10">
+                    <Button Text="CONFIRMAR" BackgroundColor="#D4E9D4" TextColor="Black" CornerRadius="10" Clicked="OnConfirmarClicked"/>
+                    <Button Text="ATUALIZAR" BackgroundColor="#D3E2F1" TextColor="Black" CornerRadius="10" Clicked="OnAtualizarClicked"/>
+                </StackLayout>
+                <Button Text="VOLTAR" BackgroundColor="#FBD5B5" TextColor="Black" CornerRadius="10" HorizontalOptions="Center" Clicked="OnVoltarClicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
 </ContentPage>

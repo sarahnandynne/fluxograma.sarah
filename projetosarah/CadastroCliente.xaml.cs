@@ -1,8 +1,7 @@
-using System;
 using Microsoft.Maui.Controls;
 
-namespace projetosarah
-{
+namespace projetosarah;
+
     public partial class CadastroCliente : ContentPage
     {
         public CadastroCliente()
@@ -12,20 +11,17 @@ namespace projetosarah
 
         private void OnConfirmarClicked(object sender, EventArgs e)
         {
-            // Código para ação de confirmar
-            DisplayAlert("Confirmar", "Dados confirmados", "OK");
+            // Lógica para o botão CONFIRMAR
         }
 
         private void OnAtualizarClicked(object sender, EventArgs e)
         {
-            // Código para ação de atualizar
-            DisplayAlert("Atualizar", "Dados atualizados", "OK");
+            // Lógica para o botão ATUALIZAR
         }
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Código para ação de voltar
-            Navigation.PopAsync();
+            // Lógica para o botão VOLTAR
         }
     }
-}
+
