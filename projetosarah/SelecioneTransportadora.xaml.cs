@@ -2,12 +2,13 @@ using Microsoft.Maui.Controls;
 
 namespace projetosarah
 {
-    public partial class SelecioneCliente : ContentPage
-{        public SelecioneCliente()
+    public partial class SelecioneTransportadora : ContentPage
+    {
+        public SelecioneTransportadora()
         {
             InitializeComponent();
         }
-        void OnCadastroClientesClicked (object sender, EventArgs e)
+         void OnCadastroClientesClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
     	Application.Current.MainPage = new CadastroCliente();
@@ -23,5 +24,6 @@ namespace projetosarah
 		if (Application.Current != null)
     	Application.Current.MainPage = new MainPage();
 	    }
-}
+
+    }
 }

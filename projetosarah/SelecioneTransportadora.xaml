@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projetosarah.SelecioneCliente">
+             x:Class="projetosarah.SelecioneProduto">
     <ContentPage.Content>
         <StackLayout Padding="20">
             <Frame CornerRadius="10" BorderColor="Gray" Padding="10">
@@ -9,26 +9,26 @@
                            FontSize="Large"
                            HorizontalOptions="Center"
                            Margin="0,20,0,20"/>
-                    <Button Text="CADASTRO DE CLIENTES"
-                            FontSize="Medium"
-                            BackgroundColor="Blue"
-                            TextColor="White" 
-                            Clicked="OnCadastroClientesClicked"
-                            HorizontalOptions="FillAndExpand"
-                            Margin="0,10"/>
-                    <Button Text="LISTA DE CLIENTES"
+                    <Button Text="CADASTRO DE TRANSPORTADORAS"
                             FontSize="Medium"
                             BackgroundColor="Blue"
                             TextColor="White"
                             HorizontalOptions="FillAndExpand"
-                            Clicked="OnListaClientesClicked"
+                            Clicked="OnCadastroTransportadoraClicked"
+                            Margin="0,10"/>
+                    <Button Text="LISTA DE TRANSPORTADORAS"
+                            FontSize="Medium"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="OnListaTransportadoraClicked"
                             Margin="0,10"/>
                     <Button Text="VOLTAR"
                             FontSize="Medium"
                             BackgroundColor="Yellow"
                             TextColor="Black"
                             HorizontalOptions="Center"
-                            Clicked="OnVoltarClienteClicked"
+                            Clicked="OVoltarTransportadoraClicked"
                             Margin="0,30,0,0"/>
                 </StackLayout>
             </Frame>

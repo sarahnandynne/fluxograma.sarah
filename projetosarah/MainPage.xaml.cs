@@ -33,15 +33,13 @@ public partial class MainPage : ContentPage
 	}
 	void OnFornecedoresClicked (object sender, EventArgs e)
 	{
-		
-	}
-	void OnFuncionarioClicked (object sender, EventArgs e)
-	{
-		
+		if (Application.Current != null)
+    	Application.Current.MainPage = new SelecioneFornecedor();
 	}
 	void OnTransportadoraClicked (object sender, EventArgs e)
 	{
-		
+		if (Application.Current != null)
+    	Application.Current.MainPage = new SelecioneTransportadora();
 	}
 }
 

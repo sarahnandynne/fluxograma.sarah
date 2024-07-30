@@ -55,5 +55,34 @@
                 <Button Text="VOLTAR" BackgroundColor="#FBD5B5" TextColor="Black" CornerRadius="10" HorizontalOptions="Center" Clicked="OnVoltarClicked"/>
             </StackLayout>
         </Frame>
+        <Frame BackgroundColor="LightGreen"
+               IsVisible="false"
+               x:Name="framecadastrosucesso"
+               BorderColor="DarkGreen"
+               CornerRadius="10"
+               Padding="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Label Text="CLIENTE CADASTRADO COM SUCESSO"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <Frame BackgroundColor="LightGreen"
+               IsVisible="false"
+               x:Name="frameatualizadosucesso"
+               BorderColor="DarkGreen"
+               CornerRadius="10"
+               Padding="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Label Text="CLIENTE ATUALIZADO COM SUCESSO"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+                   </Frame>
+        </Frame>
     </StackLayout>
 </ContentPage>

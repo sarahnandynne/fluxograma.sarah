@@ -31,7 +31,8 @@ namespace projetosarah
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão de voltar
+            if (Application.Current != null)
+    	Application.Current.MainPage = new MainPage();
         }
     }
 }

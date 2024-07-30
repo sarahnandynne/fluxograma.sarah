@@ -14,19 +14,20 @@ namespace projetosarah
 
         private void OnConfirmarButtonClicked(object sender, EventArgs e)
         {
-            // Handle Confirmar button click
+            framecadastradosucesso.IsVisible=true;
             DisplayAlert("Confirmar", "Cadastro confirmado!", "OK");
         }
 
         private void OnAtualizarButtonClicked(object sender, EventArgs e)
         {
-            // Handle Atualizar button click
+            frameatualizadosucesso.IsVisible=true;
             DisplayAlert("Atualizar", "Cadastro atualizado!", "OK");
         }
 
         private void OnVoltarButtonClicked(object sender, EventArgs e)
         {
-            // Handle Voltar button click
+            if (Application.Current != null)
+    	Application.Current.MainPage = new MainPage();
             Navigation.PopAsync();
         }
     }

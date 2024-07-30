@@ -11,17 +11,18 @@ namespace projetosarah;
 
         private void OnConfirmarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão CONFIRMAR
+           framecadastrosucesso.IsVisible=true;
         }
 
         private void OnAtualizarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão ATUALIZAR
+            frameatualizadosucesso.IsVisible=true;
         }
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão VOLTAR
+           if (Application.Current != null)
+    	Application.Current.MainPage = new MainPage();
         }
     }
 

@@ -74,6 +74,35 @@
                             HorizontalOptions="Center"
                             VerticalOptions="End"
                             Margin="5,20,5,0" />
+                    <Frame BackgroundColor="LightGreen"
+                           IsVisible="false"
+                           x:Name="frameatualizadosucesso"
+                           BorderColor="DarkGreen"
+                           CornerRadius="10"
+                           Padding="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
+                        <Label Text="FORNECEDOR ATUALIZADO COM SUCESSO"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                               
+                     <Frame BackgroundColor="LightGreen"
+                           IsVisible="false"
+                           x:Name="framecadastradosucesso"
+                           BorderColor="DarkGreen"
+                           CornerRadius="10"
+                           Padding="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
+                        <Label Text="FORNECEDOR CADASTRADO COM SUCESSO"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </Frame>
+                    </Frame>
                 </StackLayout>
             </Frame>
         </StackLayout>
