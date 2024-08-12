@@ -1,23 +1,13 @@
-namespace Modelos;
-public class Fornecedor:Pessoas
-{
-string email;
-string CNPJ;
 
-public void SetEmail (string E)
+using LiteDB;
+
+namespace Modelos;
+
+public class Fornecedor: Pessoas
 {
-    email = E;
-}
-public string GetEmail ()
-{
-    return email;
-}
-public void SetCNPJ (string C)
-{
-    CNPJ = C;
-}
-public string GetCNPJ ()
-{
-    return CNPJ;
-}
+  [BsonId]
+  
+  public string email { get; set; }
+
+  public string CNPJ { get; set; }
 }

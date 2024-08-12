@@ -1,61 +1,17 @@
+using LiteDB;
+
 namespace Modelos;
 
-public class Pedido:Registro
+public class Pedido: Pessoas
 {
-    int código;
-    int id;
-    int quantidade;
-    string cor;
-    string endereco;
-    string valortotal;
+  [BsonId]
+  
+  public string cor { get; set; }
 
-    public void SetCódigo (int C)
-    {
-        código = C;
-    }
-    public int GetCódigo ()
-    {
-        return código;
-    }
-     public void SetId (int I)
-    {
-        id = I;
-    }
-    public int GetId ()
-    {
-        return id;
-    }
-    public void SetQuantidade(int Q)
-    {
-        quantidade = Q;
-    }
-    public int GetQuantidade ()
-    {
-        return quantidade;
-    }
-    public void SetCor (string C)
-    {
-        cor = C;
-    }
-    public string GetCor()
-    {
-        return cor;
-    }
-     public void SetEndereco (string E)
-    {
-        endereco = E;
-    }
-    public string GetEndereco()
-    {
-        return endereco;
-    }
-    
-     public void SetValorTotal (string V)
-    {
-        valortotal = V;
-    }
-    public string GetValorTotal()
-    {
-        return valortotal;
-    }
+  public string endereço { get; set; }
+  public int id { get; set; }
+    public string valortotal { get; set; }
+  public int quantidade { get; set; }
+
+  public int código { get; set; }
 }

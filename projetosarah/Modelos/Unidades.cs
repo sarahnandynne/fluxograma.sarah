@@ -1,14 +1,11 @@
-namespace Modelos;
-public class Unidades:Pessoas
-{
-    string nome;
+using LiteDB;
 
-    public void SetNome (string N)
-    {
-        nome = N;
-    }
-    public string GetNome ()
-    {
-        return nome;
-    }
+namespace Modelos;
+
+public class Unidades: Pessoas
+{
+  [BsonId]
+  
+  public string nome { get; set; }
+
 }

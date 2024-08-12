@@ -1,24 +1,13 @@
+
+using LiteDB;
+
 namespace Modelos;
 
-public class FornecedorMateriaPrima:Registro
+public class FornecedorMateriaPrima: Registro
 {
-    int idfornecedor;
-    int idmateriaprima;
+  [BsonId]
+  
+  public int idfornecedor { get; set; }
 
-    public void SetidF (int IF)
-    {
-        idfornecedor= IF;
-    }
-    public int GetidF ()
-    {
-        return idfornecedor;
-    }
-    public void SetidM (int IM)
-    {
-        idmateriaprima = IM;
-    }
-    public int GetCPF ()
-    {
-        return idmateriaprima;
-    }
+  public int idmateriaprima { get; set; }
 }
