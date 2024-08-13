@@ -1,21 +1,47 @@
 using Modelos;
 
-namespace Controles
+namespace Controles;
+
+public class ControleTransportadora: ControleBase
 {
-    public class ControleTransportadora:ControleBase
-    {
-        public override void Criar (Registro o)
-        {
-        }
-        public override void Atualizar (Registro o)
-        {
-        }
-        public override void Apagar (int id)
-        {
-        }
-        public override Registro Ler (int id)
-        {
-            return null;
-        }
-    }
+  //----------------------------------------------------------------------------
+
+  public ControleTransportadora() : base()
+  {
+    NomeDaTabela = "Transportadora";
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual Registro? Ler(int idTransportadora)
+  {
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    return collection.FindOne(d => d.Id == idTransportadora);
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual List<Transportadora>? LerTodos()
+  {
+    var tabela = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    return new List<Transportadora>(tabela.FindAll());
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual void Apagar(int idTransportadora)
+  {
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    collection.Delete(idTransportadora);
+  }
+
+  //----------------------------------------------------------------------------
+
+  public virtual void CriarOuAtualizar(Transportadora transportadora)
+  {
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    collection.Upsert(transportadora);
+  }
+
+  //----------------------------------------------------------------------------
 }

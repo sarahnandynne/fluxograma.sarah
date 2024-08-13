@@ -9,6 +9,6 @@ public class Produto: Registro
   public string nome { get; set; }
 
   public string unidade { get; set; }
-  public int id { get; set; }
+  public int Id { get; set; }
     public string valor { get; set; }
 }

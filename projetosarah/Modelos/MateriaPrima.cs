@@ -9,7 +9,7 @@ public class MateriaPrima: Pessoas
   public string cor { get; set; }
 
   public string unidade { get; set; }
-  public int id { get; set; }
+  public int Id { get; set; }
 
   public int código { get; set; }
 }

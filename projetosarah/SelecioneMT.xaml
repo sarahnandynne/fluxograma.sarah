@@ -13,18 +13,21 @@
                             FontSize="Medium"
                             BackgroundColor="Blue"
                             TextColor="White"
+                            Clicked="OnCadastroMTClicked"
                             HorizontalOptions="FillAndExpand"
                             Margin="0,10"/>
                     <Button Text="LISTA DE MATÉRIA PRIMA"
                             FontSize="Medium"
                             BackgroundColor="Blue"
                             TextColor="White"
+                             Clicked="OnListaMTClicked"
                             HorizontalOptions="FillAndExpand"
                             Margin="0,10"/>
                     <Button Text="VOLTAR"
                             FontSize="Medium"
                             BackgroundColor="Yellow"
                             TextColor="Black"
+                            Clicked="OnVoltarMTClicked"
                             HorizontalOptions="Center"
                             Margin="0,30,0,0"/>
                 </StackLayout>

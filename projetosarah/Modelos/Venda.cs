@@ -9,7 +9,7 @@ public class Venda: Registro
   public string produto { get; set; }
 
   public string unidadedemedida { get; set; }
-  public int id { get; set; }
+  public int Id { get; set; }
     
   public int quantidade { get; set; }
 

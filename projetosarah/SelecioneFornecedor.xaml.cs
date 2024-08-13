@@ -19,7 +19,7 @@ namespace projetosarah
 		if (Application.Current != null)
     	Application.Current.MainPage = new ListaFornecedor();
 	    }
-        void OnVoltarClienteClicked (object sender, EventArgs e)
+        void OnVoltarFornecedorClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
     	Application.Current.MainPage = new MainPage();

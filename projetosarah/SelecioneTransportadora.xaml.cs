@@ -8,18 +8,18 @@ namespace projetosarah
         {
             InitializeComponent();
         }
-         void OnCadastroClientesClicked (object sender, EventArgs e)
+         void OnCadastroTransportadoraClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
     	Application.Current.MainPage = new CadastroCliente();
 	    }
 
-	    void OnListaClientesClicked (object sender, EventArgs e)
+	    void OnListaTransportadoraClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
     	Application.Current.MainPage = new ListaClientes();
 	    }
-        void OnVoltarClienteClicked (object sender, EventArgs e)
+        void OnVoltarTransportadoraClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
     	Application.Current.MainPage = new MainPage();

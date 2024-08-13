@@ -9,7 +9,7 @@ public class Pedido: Pessoas
   public string cor { get; set; }
 
   public string endereço { get; set; }
-  public int id { get; set; }
+  public int Id { get; set; }
     public string valortotal { get; set; }
   public int quantidade { get; set; }
 
