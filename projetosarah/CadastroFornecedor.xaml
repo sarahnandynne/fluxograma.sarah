@@ -9,7 +9,7 @@
                    CornerRadius="10"
                    Padding="10">
                 <StackLayout>
-                    <Label Text="CADASTRO DO FORNECEDOR"
+                    <Label Text="CADASTRO"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"
                            Margin="0,0,0,10" />
@@ -82,7 +82,7 @@
                            Padding="20"
                            HorizontalOptions="Center"
                            VerticalOptions="Center">
-                        <Label Text="FORNECEDOR ATUALIZADO COM SUCESSO"
+                        <Label Text="ATUALIZADO COM SUCESSO"
                                FontAttributes="Bold"
                                FontSize="Large"
                                HorizontalOptions="Center"
@@ -96,7 +96,7 @@
                            Padding="20"
                            HorizontalOptions="Center"
                            VerticalOptions="Center">
-                        <Label Text="FORNECEDOR CADASTRADO COM SUCESSO"
+                        <Label Text="CADASTRADO COM SUCESSO"
                                FontAttributes="Bold"
                                FontSize="Large"
                                HorizontalOptions="Center"
