@@ -10,6 +10,7 @@
             <Frame BorderColor="Black"
                    CornerRadius="20"
                    Padding="10"
+                
                    Margin="20,50,20,50">
                 <StackLayout>
                     <Frame BackgroundColor="LightGray"

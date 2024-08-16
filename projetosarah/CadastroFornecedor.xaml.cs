@@ -1,9 +1,12 @@
+using Controles;
 using Microsoft.Maui.Controls;
 
 namespace projetosarah
 {
     public partial class CadastroFornecedor : ContentPage
     {
+        ControleCliente controleCliente=new ControleCliente();
+
         public CadastroFornecedor()
         {
             InitializeComponent();
@@ -14,6 +17,10 @@ namespace projetosarah
 
         private void OnConfirmarButtonClicked(object sender, EventArgs e)
         {
+            var cliente = new Modelos.Cliente();
+            cliente.nome = NomeEntry.Text;
+            cliente.telefone = TelefoneEntry.Text;
+            controleCliente.CriarOuAtualizar(cliente);
             framecadastradosucesso.IsVisible=true;
             DisplayAlert("Confirmar", "Cadastro confirmado!", "OK");
         }
@@ -28,7 +35,6 @@ namespace projetosarah
         {
             if (Application.Current != null)
     	Application.Current.MainPage = new MainPage();
-            Navigation.PopAsync();
         }
     }
 }

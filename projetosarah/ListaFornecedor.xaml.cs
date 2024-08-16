@@ -40,8 +40,8 @@ namespace projetosarah
 
         private void OnVoltarButtonClicked(object sender, EventArgs e)
         {
-            // Handle back navigation
-            Navigation.PopAsync();
+            if (Application.Current != null)
+    	Application.Current.MainPage = new MainPage();
         }
     }
 }

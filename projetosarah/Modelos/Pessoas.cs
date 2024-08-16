@@ -4,10 +4,12 @@ namespace Modelos;
 
 public class Pessoas: Registro
 {
-  [BsonId]
+  
   
   public string nome { get; set; }
 
+
   public string telefone { get; set; }
+  [BsonId]
   public int Id { get; set; }
 }
