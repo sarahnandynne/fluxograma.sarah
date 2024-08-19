@@ -10,13 +10,13 @@ namespace projetosarah
         void OnCadastroPedidosClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
-    	Application.Current.MainPage = new CadastroFornecedor();
+    	Application.Current.MainPage = new CadastroPedido();
 	    }
 
 	    void OnListaPedidosClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new ListaFornecedor();
+    	Application.Current.MainPage = new Lista();
 	    }
         void OnVoltarPedidosClicked (object sender, EventArgs e)
 	    {

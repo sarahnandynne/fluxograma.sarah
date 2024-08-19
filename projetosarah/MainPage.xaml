@@ -10,14 +10,13 @@
             <Frame BorderColor="Black"
                    CornerRadius="20"
                    Padding="10"
-                
                    Margin="20,50,20,50">
                 <StackLayout>
                     <Frame BackgroundColor="LightGray"
                            CornerRadius="10"
                            Padding="5"
                            HorizontalOptions="Center">
-                        <Label Text="O QUE VOCÊ DESEJA?"
+                        <Label Text="ONDE DESEJA ENTRAR?"
                                FontAttributes="Bold"
                                HorizontalTextAlignment="Center" />
                     </Frame>

@@ -22,13 +22,13 @@ namespace projetosarah
             cliente.telefone = TelefoneEntry.Text;
             controleCliente.CriarOuAtualizar(cliente);
             framecadastradosucesso.IsVisible=true;
-            DisplayAlert("Confirmar", "Cadastro confirmado!", "OK");
+            DisplayAlert("CONFIRMAR", "Cadastro confirmado com sucesso!", "OK");
         }
 
         private void OnAtualizarButtonClicked(object sender, EventArgs e)
         {
             frameatualizadosucesso.IsVisible=true;
-            DisplayAlert("Atualizar", "Cadastro atualizado!", "OK");
+            DisplayAlert("ATUALIZAR", "Cadastro atualizado com sucesso!", "OK");
         }
 
         private void OnVoltarButtonClicked(object sender, EventArgs e)

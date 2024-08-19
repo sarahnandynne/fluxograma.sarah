@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetosarah.CadastroPedido"
+             Title="Pedido">
+    <ScrollView>
+        <Frame CornerRadius="10" Padding="10" Margin="20">
+            <StackLayout>
+                <Label Text="PEDIDO" FontSize="Large" HorizontalOptions="Center" />
+                
+                <Label Text="CÓDIGO DO CLIENTE:" />
+                <Entry x:Name="CustomerCodeEntry" Placeholder="Digite o código do cliente" />
+                
+                <Label Text="QUANTIDADE:" />
+                <Entry x:Name="QuantityEntry" Placeholder="Digite a quantidade" Keyboard="Numeric" />
+                
+                <Label Text="COR:" />
+                <Picker x:Name="ColorPicker">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Vermelho</x:String>
+                            <x:String>Azul</x:String>
+                            <x:String>Verde</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                
+                <Label Text="ENDEREÇO:" />
+                <Entry x:Name="AddressEntry" Placeholder="Digite o endereço" />
+                
+                <Label Text="FRETE:" />
+                <Entry x:Name="FreightEntry" Placeholder="Digite o valor do frete" Keyboard="Numeric" />
+                
+                <Label Text="TOTAL:" />
+                <Entry x:Name="TotalEntry" Placeholder="Digite o valor total" Keyboard="Numeric" />
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
+                    <Button Text="CONFIRMAR" Clicked="OnConfirmarClicked" />
+                    <Button Text="ATUALIZAR" Clicked="OnAtualizarClicked" />
+                    <Button Text="VOLTAR" Clicked="OnVoltarClicked" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+</ContentPage>

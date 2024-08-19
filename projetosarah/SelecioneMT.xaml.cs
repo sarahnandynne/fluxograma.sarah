@@ -10,18 +10,18 @@ namespace projetosarah
         void OnCadastroMTClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
-    	Application.Current.MainPage = new CadastroFornecedor();
+    	Application.Current.MainPage = new CadastroMateriaPrima();
 	    }
 
 	    void OnListaMTClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new ListaFornecedor();
+    	Application.Current.MainPage = new Lista();
 	    }
         void OnVoltarMTClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new MainPage();
+    	Application.Current.MainPage = new SelecioneMT();
 	    }
 }
 }

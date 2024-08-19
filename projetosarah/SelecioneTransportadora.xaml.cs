@@ -17,7 +17,7 @@ namespace projetosarah
 	    void OnListaTransportadoraClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new ListaFornecedor();
+    	Application.Current.MainPage = new Lista();
 	    }
         void OnVoltarTransportadoraClicked (object sender, EventArgs e)
 	    {
