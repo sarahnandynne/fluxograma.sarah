@@ -44,7 +44,12 @@ public partial class MainPage : ContentPage
 	void OnFuncionarioClicked (object sender, EventArgs e)
 	{
 		if (Application.Current != null)
-    	Application.Current.MainPage = new SelecioneTransportadora();
+    	Application.Current.MainPage = new SelecioneFuncionario();
+	}
+	void OnVendasClicked (object sender, EventArgs e)
+	{
+		if (Application.Current != null)
+    	Application.Current.MainPage = new SelecioneVendas();
 	}
 }
 

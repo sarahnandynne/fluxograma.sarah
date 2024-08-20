@@ -6,43 +6,78 @@
 
     <ContentPage.Content>
         <Grid Padding="20">
-            <Frame BorderColor="Black" CornerRadius="20" HasShadow="True">
+            <Frame BorderColor="Black"
+                    CornerRadius="20"
+                    HasShadow="True">
                 <StackLayout>
                     <!-- Título -->
-                    <Frame BackgroundColor="#FDD7A0" CornerRadius="20" HorizontalOptions="Center" Padding="10">
-                        <Label Text="CADASTRO DO PRODUTO" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    <Frame BackgroundColor="#FDD7A0"
+                            CornerRadius="20"
+                            HorizontalOptions="Center"
+                            Padding="10">
+                        <Label Text="CADASTRO DO PRODUTO"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                HorizontalOptions="Center"/>
                     </Frame>
-                    
+
                     <!-- Campos de Entrada -->
-                    <StackLayout Padding="20,40,20,20" Spacing="20">
+                    <StackLayout Padding="20,40,20,20"
+                            Spacing="20">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="NOME:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="NomeEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="NOME:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="NomeEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="VALOR:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="ValorEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="VALOR:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="ValorEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="TEMPO DE PRODUÇÃO:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="TempoProducaoEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="TEMPO DE PRODUÇÃO:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="TempoProducaoEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="MATÉRIA PRIMA:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="MateriaPrimaEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="MATÉRIA PRIMA:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="MateriaPrimaEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
                     </StackLayout>
-                    
+
                     <!-- Botões -->
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                        <Button Text="CONFIRMAR" BackgroundColor="#B5E61D" TextColor="Black" Clicked="OnConfirmarClicked"/>
-                        <Button Text="ATUALIZAR" BackgroundColor="#A8C3F7" TextColor="Black" Clicked="OnAtualizarClicked"/>
+                    <StackLayout Orientation="Horizontal"
+                            HorizontalOptions="Center"
+                            Spacing="20">
+                        <Button Text="CONFIRMAR"
+                                BackgroundColor="#B5E61D"
+                                TextColor="Black"
+                                Clicked="OnConfirmarClicked"/>
+                        <Button Text="ATUALIZAR"
+                                BackgroundColor="#A8C3F7"
+                                TextColor="Black"
+                                Clicked="OnAtualizarClicked"/>
                     </StackLayout>
-                    
-                    <Button Text="VOLTAR" BackgroundColor="#FFDA8B" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,0" Clicked="OnVoltarClicked"/>
+
+                    <Button Text="VOLTAR"
+                            BackgroundColor="#FFDA8B"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            Margin="0,20,0,0"
+                            Clicked="OnVoltarClicked"/>
                 </StackLayout>
             </Frame>
         </Grid>

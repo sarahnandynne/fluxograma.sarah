@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetosarah.CadastroFornecedorPage"
+             Title="Cadastro do Fornecedor">
+       <ScrollView>
+              <StackLayout Padding="10">
+                     <Frame BorderColor="Black"
+                            CornerRadius="10"
+                            Padding="10">
+                            <StackLayout>
+                                   <Frame BackgroundColor="#FDD7A0"
+                                                 CornerRadius="20"
+                                                 HorizontalOptions="Center"
+                                                 Padding="10">
+                                          <Label Text="CADASTRO DE FORNECEDOR"
+                                                        FontSize="20"
+                                                        FontAttributes="Bold"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="Center"/>
+                                   </Frame>
+                                   <StackLayout Orientation="Horizontal"
+                                                Margin="0,5">
+                                          <Label Text="NOME:"
+                                                 VerticalTextAlignment="Center"
+                                                 WidthRequest="100"/>
+                                          <Entry x:Name="NomeEntry"
+                                                 Placeholder="SN Embalagens"/>
+                                   </StackLayout>
+                                   <StackLayout Orientation="Horizontal"
+                                                Margin="0,5">
+                                          <Label Text="TELEFONE:"
+                                                 VerticalTextAlignment="Center"
+                                                 WidthRequest="100"/>
+                                          <Entry x:Name="TelefoneEntry"
+                                                 Placeholder="(43) 99012-3456"/>
+                                   </StackLayout>
+                                   <StackLayout Orientation="Horizontal"
+                                                Margin="0,5">
+                                          <Label Text="E-MAIL:"
+                                                 VerticalTextAlignment="Center"
+                                                 WidthRequest="100"/>
+                                          <Entry x:Name="EmailEntry"
+                                                 Placeholder="SNembalagens2024@gmail.com"/>
+                                   </StackLayout>
+                                   <StackLayout Orientation="Horizontal"
+                                                Margin="0,5">
+                                          <Label Text="CNPJ:"
+                                                 VerticalTextAlignment="Center"
+                                                 WidthRequest="100"/>
+                                          <Entry x:Name="CnpjEntry"
+                                                 Placeholder="12.345.678/9101-23"/>
+                                   </StackLayout>
+                                   <StackLayout Orientation="Horizontal"
+                                                Margin="0,5">
+                                          <Label Text="MATÉRIA PRIMA:"
+                                                 VerticalTextAlignment="Center"
+                                                 WidthRequest="100"/>
+                                          <Entry x:Name="MateriaPrimaEntry"
+                                                 Placeholder="LINHA"/>
+                                   </StackLayout>
+                                   <StackLayout Orientation="Horizontal"
+                                                HorizontalOptions="Center"
+                                                Margin="20,10,20,0">
+                                          <Button Text="Confirmar"
+                                                  Clicked="OnConfirmarClicked"
+                                                  BackgroundColor="Green"
+                                                  TextColor="White"
+                                                  Margin="5"/>
+                                          <Button Text="Atualizar"
+                                                  Clicked="OnAtualizarClicked"
+                                                  BackgroundColor="LightBlue"
+                                                  TextColor="Black"
+                                                  Margin="5"/>
+                                   </StackLayout>
+                                   <Button Text="Voltar"
+                                           Clicked="OnVoltarClicked"
+                                           BackgroundColor="Orange"
+                                           TextColor="Black"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="End"
+                                           Margin="5,20,5,0"/>
+                            </StackLayout>
+                     </Frame>
+              </StackLayout>
+       </ScrollView>
+</ContentPage>

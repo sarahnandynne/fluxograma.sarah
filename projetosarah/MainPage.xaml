@@ -70,12 +70,18 @@
                                     Grid.Row="2"
                                     Grid.Column="1"
                                     Clicked="OnFuncionarioClicked" />
-                            <Button Text="TRANSPORTADORA"
+                            <Button Text="TRANSPORTES"
                                     TextColor="Black"
-                                    BackgroundColor="#C71FA5"
+                                    BackgroundColor="#f75959"
                                     Grid.Row="3"
-                                    Grid.ColumnSpan="2"
+                                    Grid.Column="0"
                                     Clicked="OnTransportadoraClicked" />
+                         <Button Text="VENDAS"
+                                    TextColor="Black"
+                                    BackgroundColor="#59f7ca"
+                                    Grid.Row="4"
+                                    Grid.Column="1"
+                                    Clicked="OnVendasClicked" />
                         </Grid>
                     </StackLayout>
                 </StackLayout>

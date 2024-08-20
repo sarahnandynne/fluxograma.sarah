@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projetosarah.SelecioneProduto">
+             x:Class="projetosarah.SelecioneVendas">
     <ContentPage.Content>
         <StackLayout Padding="20">
             <Frame CornerRadius="10" BorderColor="Gray" Padding="10">
@@ -9,25 +9,25 @@
                            FontSize="Large"
                            HorizontalOptions="Center"
                            Margin="0,20,0,20"/>
-                    <Button Text="CADASTRO DE PRODUTOS"
+                    <Button Text="VENDA DE PRODUTOS"
                             FontSize="Medium"
                             BackgroundColor="Blue"
-                            Clicked="OnCadastroProdutosClicked"
                             TextColor="White"
+                            Clicked="OnVendaProdutosClicked"
                             HorizontalOptions="FillAndExpand"
                             Margin="0,10"/>
                     <Button Text="ESTOQUE DE PRODUTOS"
                             FontSize="Medium"
                             BackgroundColor="Blue"
-                            Clicked="OnListaProdutosClicked"
                             TextColor="White"
+                             Clicked="OnEstoqueProdutosClicked"
                             HorizontalOptions="FillAndExpand"
                             Margin="0,10"/>
                     <Button Text="VOLTAR"
                             FontSize="Medium"
                             BackgroundColor="Yellow"
-                            Clicked="OnVoltarProdutosClicked"
                             TextColor="Black"
+                            Clicked="OnVoltarProdutosClicked"
                             HorizontalOptions="Center"
                             Margin="0,30,0,0"/>
                 </StackLayout>

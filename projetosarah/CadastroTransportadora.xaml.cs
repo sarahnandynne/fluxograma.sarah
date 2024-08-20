@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace projetosarah
 {
-    public partial class CadastroMateriaPrima : ContentPage
+    public partial class CadastroTransportadora : ContentPage
     {
-        public CadastroMateriaPrima()
+        public CadastroTransportadora()
         {
             InitializeComponent();
         }
@@ -22,10 +22,10 @@ namespace projetosarah
             DisplayAlert("ATUALIZAR", "Cadastro atualizado com sucesso!", "OK");
         }
 
-        private void OnVoltarClicked1(object sender, EventArgs e)
+        private void OnVoltarClicked(object sender, EventArgs e)
         {
             if (Application.Current != null)
-    	Application.Current.MainPage = new MainPage();
+                Application.Current.MainPage = new MainPage();
         }
     }
 }

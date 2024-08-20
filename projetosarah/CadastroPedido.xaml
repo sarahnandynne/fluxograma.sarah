@@ -6,8 +6,9 @@
     <ScrollView>
         <Frame CornerRadius="10" Padding="10" Margin="20">
             <StackLayout>
-                <Label Text="PEDIDO" FontSize="Large" HorizontalOptions="Center" />
-                
+            <Frame BackgroundColor="#FDD7A0" CornerRadius="20" HorizontalOptions="Center" Padding="10">
+            <Label Text="CADASTRO DE PEDIDOS" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+        </Frame>
                 <Label Text="CÓDIGO DO CLIENTE:" />
                 <Entry x:Name="CustomerCodeEntry" Placeholder="Digite o código do cliente" />
                 
@@ -35,9 +36,15 @@
                 <Entry x:Name="TotalEntry" Placeholder="Digite o valor total" Keyboard="Numeric" />
                 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
-                    <Button Text="CONFIRMAR" Clicked="OnConfirmarClicked" />
-                    <Button Text="ATUALIZAR" Clicked="OnAtualizarClicked" />
-                    <Button Text="VOLTAR" Clicked="OnVoltarClicked" />
+                    <Button Text="CONFIRMAR"
+                            BackgroundColor="LightBlue"
+                            Clicked="OnConfirmarClicked" />
+                    <Button Text="ATUALIZAR"
+                            BackgroundColor="#f3d54b"
+                            Clicked="OnAtualizarClicked" />
+                    <Button Text="VOLTAR"
+                            BackgroundColor="lightGreen"
+                            Clicked="OnVoltarClicked" />
                 </StackLayout>
             </StackLayout>
         </Frame>

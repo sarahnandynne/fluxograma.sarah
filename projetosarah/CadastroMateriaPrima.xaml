@@ -6,23 +6,39 @@
 
     <ContentPage.Content>
         <Grid Padding="20">
-            <Frame BorderColor="Black" CornerRadius="20" HasShadow="True">
+            <Frame BorderColor="Black"
+                    CornerRadius="20"
+                    HasShadow="True">
                 <StackLayout>
                     <!-- Título -->
-                    <Frame BackgroundColor="#FDD7A0" CornerRadius="20" HorizontalOptions="Center" Padding="10">
-                        <Label Text="CADASTRO DE MATÉRIA PRIMA" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    <Frame BackgroundColor="#FDD7A0"
+                            CornerRadius="20"
+                            HorizontalOptions="Center"
+                            Padding="10">
+                        <Label Text="CADASTRO DE MATÉRIA PRIMA"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                HorizontalOptions="Center"/>
                     </Frame>
-                    
+
                     <!-- Campos de Entrada -->
-                    <StackLayout Padding="20,40,20,20" Spacing="20">
+                    <StackLayout Padding="20,40,20,20"
+                            Spacing="20">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="NOME:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="NomeEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="NOME:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="NomeEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="UNIDADE:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Picker x:Name="UnidadePicker" HorizontalOptions="FillAndExpand">
+                            <Label Text="UNIDADE:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Picker x:Name="UnidadePicker"
+                                    HorizontalOptions="FillAndExpand">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:String}">
                                         <x:String>Unidade 1</x:String>
@@ -32,25 +48,44 @@
                                 </Picker.ItemsSource>
                             </Picker>
                         </StackLayout>
-                        
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="COR:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="CorEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="COR:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="CorEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="CÓDIGO:" FontAttributes="Bold" VerticalOptions="Center"/>
-                            <Entry x:Name="CodigoEntry" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="CÓDIGO:"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"/>
+                            <Entry x:Name="CodigoEntry"
+                                    HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
                     </StackLayout>
-                    
+
                     <!-- Botões -->
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                        <Button Text="CONFIRMAR" BackgroundColor="#B5E61D" TextColor="Black" Clicked="OnConfirmarClicked"/>
-                        <Button Text="ATUALIZAR" BackgroundColor="#A8C3F7" TextColor="Black" Clicked="OnAtualizarClicked"/>
+                    <StackLayout Orientation="Horizontal"
+                            HorizontalOptions="Center"
+                            Spacing="20">
+                        <Button Text="CONFIRMAR"
+                                BackgroundColor="#B5E61D"
+                                TextColor="Black"
+                                Clicked="OnConfirmarClicked"/>
+                        <Button Text="ATUALIZAR"
+                                BackgroundColor="#A8C3F7"
+                                TextColor="Black"
+                                Clicked="OnAtualizarClicked"/>
                     </StackLayout>
-                    
-                    <Button Text="VOLTAR" BackgroundColor="#FFDA8B" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,0" Clicked="OnVoltarClicked"/>
+
+                    <Button Text="VOLTAR"
+                            BackgroundColor="#FFDA8B"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            Margin="0,20,0,0"
+                            Clicked="OnVoltarClicked1"/>
                 </StackLayout>
             </Frame>
         </Grid>

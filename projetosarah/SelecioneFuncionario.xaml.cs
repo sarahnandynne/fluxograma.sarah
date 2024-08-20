@@ -2,24 +2,24 @@ using Microsoft.Maui.Controls;
 
 namespace projetosarah
 {
-    public partial class SelecioneFornecedor : ContentPage
+    public partial class SelecioneFuncionario : ContentPage
     {
-        public SelecioneFornecedor()
+        public SelecioneFuncionario()
         {
             InitializeComponent();
         }
-        void OnCadastroFornecedorClicked (object sender, EventArgs e)
+        void OnCadastroFuncionarioClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
-    	Application.Current.MainPage = new CadastroFornecedorPage();
+    	Application.Current.MainPage = new CadastroFuncionario();
 	    }
 
-	    void OnListaFornecedorClicked (object sender, EventArgs e)
+	    void OnListaFuncionarioClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
     	Application.Current.MainPage = new Lista();
 	    }
-        void OnVoltarFornecedorClicked (object sender, EventArgs e)
+        void OnVoltarFuncionarioClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
     	Application.Current.MainPage = new MainPage();

@@ -11,7 +11,7 @@ namespace projetosarah
          void OnCadastroTransportadoraClicked (object sender, EventArgs e)
 	    {
  		if (Application.Current != null)
-    	Application.Current.MainPage = new CadastroFornecedor();
+    	Application.Current.MainPage = new CadastroTransportadora();
 	    }
 
 	    void OnListaTransportadoraClicked (object sender, EventArgs e)
