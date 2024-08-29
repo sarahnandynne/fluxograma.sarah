@@ -6,10 +6,10 @@ public class Pessoas: Registro
 {
   
   
-  public string nome { get; set; }
+  public string Nome { get; set; }
 
 
-  public string telefone { get; set; }
+  public string Telefone { get; set; }
   [BsonId]
   public int Id { get; set; }
 }

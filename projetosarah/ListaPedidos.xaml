@@ -1,0 +1,120 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetosarah.ListaPedidos"
+             Title="Lista de Pedidos">
+    <ContentPage.Content>
+        <Grid Padding="10"
+                RowSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Título -->
+            <Label Text="LISTA DE PEDIDOS"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Padding="10"/>
+
+            <!-- Campo de Busca -->
+            <StackLayout Orientation="Horizontal"
+                    Grid.Row="1"
+                    Margin="0,0,0,10">
+                <Entry Placeholder="Buscar pedido..."
+                        HorizontalOptions="FillAndExpand"/>
+                <Image Source="search_icon.png"
+                        WidthRequest="30"
+                        HeightRequest="30"/>
+            </StackLayout>
+
+            <!-- Tabela de Produtos -->
+            <Grid Grid.Row="2"
+                    BackgroundColor="#E0E0E0"
+                    Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Cabeçalhos -->
+                <Label Text="ITEM"
+                        FontAttributes="Bold"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="#A0C65F"
+                        Padding="5"/>
+                <Label Text="QUANTIDADE"
+                        FontAttributes="Bold"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="#A0C65F"
+                        Padding="5"/>
+                <Label Text="UNIDADE"
+                        FontAttributes="Bold"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        BackgroundColor="#A0C65F"
+                        Padding="5"/>
+
+                <!-- Exemplo de linha de pedido -->
+                <Label Text="XXX"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Padding="5"/>
+                <Label Text="1"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Padding="5"/>
+                <Label Text="KG"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Padding="5"/>
+                <StackLayout Orientation="Horizontal"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Padding="5">
+                    <Image Source="edit_icon.png"
+                            WidthRequest="20"
+                            HeightRequest="20"/>
+                    <Image Source="delete_icon.png"
+                            WidthRequest="20"
+                            HeightRequest="20"/>
+                </StackLayout>
+
+                <!-- Repita as linhas conforme necessário -->
+
+            </Grid>
+
+            <!-- Botões -->
+            <StackLayout Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                <Button Text="CADASTRAR"
+                        BackgroundColor="#A0C65F"
+                        Clicked="OnCadastrarClicked"
+                        TextColor="White"
+                        Margin="0,0,10,0"/>
+                <Button Text="VOLTAR"
+                        Clicked="OnVoltarClicked"
+                        BackgroundColor="#FFC107"
+                        TextColor="White"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

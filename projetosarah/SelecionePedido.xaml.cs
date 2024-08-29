@@ -16,7 +16,7 @@ namespace projetosarah
 	    void OnListaPedidosClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new Lista();
+    	Application.Current.MainPage = new ListaPedidos();
 	    }
         void OnVoltarPedidosClicked (object sender, EventArgs e)
 	    {

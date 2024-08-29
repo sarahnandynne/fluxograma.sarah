@@ -16,7 +16,7 @@ namespace projetosarah
 	    void OnEstoqueProdutosClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new Lista();
+    	Application.Current.MainPage = new EstoqueProduto();
 	    }
         void OnVoltarProdutosClicked (object sender, EventArgs e)
 	    {
