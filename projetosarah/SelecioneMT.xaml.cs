@@ -16,12 +16,12 @@ namespace projetosarah
 	    void OnListaMTClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new Lista();
+    	Application.Current.MainPage = new EstoqueMT();
 	    }
         void OnVoltarMTClicked (object sender, EventArgs e)
 	    {
 		if (Application.Current != null)
-    	Application.Current.MainPage = new SelecioneMT();
+    	Application.Current.MainPage = new MainPage();
 	    }
 }
 }

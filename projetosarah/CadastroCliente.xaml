@@ -11,7 +11,7 @@
                     HasShadow="True">
                 <StackLayout>
 
-                <Label x:Name="IdLabel"/>
+                
                     <!-- Título -->
                     <Frame BackgroundColor="#FDD7A0"
                             CornerRadius="20"
@@ -23,6 +23,8 @@
                                 TextColor="Black"
                                 HorizontalOptions="Center"/>
                     </Frame>
+
+                    <Label x:Name="IdLabel"/>
 
                     <!-- Campos de Entrada -->
                     <StackLayout Padding="20,40,20,20"

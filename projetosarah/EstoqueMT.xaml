@@ -1,7 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projetosarah.EstoqueProduto"
-             Title="Estoque de Produtos">
+             x:Class="projetosarah.EstoqueMT"
+             Title="Estoque de Matéria Prima">
     <ContentPage.Content>
         <Grid Padding="10"
                 RowSpacing="5">
@@ -13,7 +13,7 @@
             </Grid.RowDefinitions>
 
             <!-- Título -->
-            <Label Text="ESTOQUE DE PRODUTOS"
+            <Label Text="ESTOQUE DE MATÉRIA PRIMA"
                    FontSize="Large"
                    HorizontalOptions="Center"
                    Grid.Row="0"
@@ -23,7 +23,7 @@
             <StackLayout Orientation="Horizontal"
                     Grid.Row="1"
                     Margin="0,0,0,10">
-                <Entry Placeholder="Buscar produto..."
+                <Entry Placeholder="Buscar matéria prima..."
                         HorizontalOptions="FillAndExpand"/>
                 <Image Source="search_icon.png"
                         WidthRequest="30"
@@ -104,8 +104,8 @@
             <StackLayout Grid.Row="3"
                     Orientation="Horizontal"
                     HorizontalOptions="Center">
-                <Button Text="NOVOS PRODUTOS"
-                        Clicked="OnCadastrarNovosClicked"
+                <Button Text="NOVA MATÉRIA PRIMA"
+                        Clicked="OnCadastrarMTClicked"
                         BackgroundColor="#A0C65F"
                         TextColor="White"
                         Margin="0,0,10,0"/>
