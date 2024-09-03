@@ -19,6 +19,7 @@
                                                         TextColor="Black"
                                                         HorizontalOptions="Center"/>
                                    </Frame>
+                                    <Label x:Name="IdLabel"/>
                                    <StackLayout Orientation="Horizontal"
                                                 Margin="0,5">
                                           <Label Text="NOME:"

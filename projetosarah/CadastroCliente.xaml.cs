@@ -23,6 +23,8 @@ namespace projetosarah
                 IdLabel.Text = cliente.Id.ToString();
                 NomeEntry.Text = cliente.Nome;
                 TelefoneEntry.Text = cliente.Telefone;
+                EnderecoEntry.Text = cliente.endereço;
+                CpfEntry.Text = cliente.CPF;
             }
         }
 
@@ -36,6 +38,8 @@ namespace projetosarah
                 cliente.Id = 0;
             cliente.Nome = NomeEntry.Text;
             cliente.Telefone = TelefoneEntry.Text;
+            EnderecoEntry.Text = cliente.endereço;
+            CpfEntry.Text = cliente.CPF;
             // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
             clienteControle.CriarOuAtualizar(cliente);
             // Mostra a mensagem de sucesso
