@@ -8,7 +8,7 @@ namespace projetosarah
     public partial class CadastroFornecedorPage : ContentPage
     {
          public Fornecedor fornecedor { get; set; }
-        Controles.ControleFornecedor clienteControle = new Controles.ControleFornecedor();
+        Controles.ControleFornecedor fornecedorControle = new Controles.ControleFornecedor();
         public CadastroFornecedorPage()
         {
             InitializeComponent();
@@ -39,11 +39,11 @@ namespace projetosarah
             fornecedor.email = EmailEntry.Text;
             fornecedor.CNPJ = CnpjEntry.Text;
             // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
-            clienteControle.CriarOuAtualizar(fornecedor);
+            fornecedorControle.CriarOuAtualizar(fornecedor);
             // Mostra a mensagem de sucesso
             DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
             if (Application.Current != null)
-                Application.Current.MainPage = new Lista();
+                Application.Current.MainPage = new ListaFornecedor();
             
         }
 

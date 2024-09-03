@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetosarah.ListaFornecedor"
+             Title="Lista de Fornecedores">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   Padding="10">
+                <StackLayout>
+                    <Label Text="LISTA"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,10"/>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="0,5">
+                        <Entry x:Name="SearchEntry"
+                               Placeholder="SN..."
+                               HorizontalOptions="FillAndExpand"/>
+                        <Button x:Name="SearchButton"
+                                Text="🔍"
+                                BackgroundColor="Transparent"
+                                WidthRequest="50"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="0,10">
+                        <Label Text="•"
+                               FontSize="Large"
+                               VerticalTextAlignment="Center"/>
+                        <Label Text="SN Embalagens"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand"/>
+                        <Button x:Name="EditButton"
+                                Text="🖉"
+                                BackgroundColor="Transparent"
+                                WidthRequest="50"/>
+                        <Button x:Name="DeleteButton"
+                                Text="🗑️"
+                                BackgroundColor="Transparent"
+                                WidthRequest="50"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 Margin="20,10,20,0">
+                        <Button Text="Cadastrar"
+                                x:Name="CadastrarButton"
+                                BackgroundColor="Green"
+                                TextColor="White"
+                                Margin="5"/>
+                        <Button Text="Voltar"
+                                x:Name="VoltarButton"
+                                BackgroundColor="Orange"
+                                TextColor="Black"
+                                Margin="5"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <ListView x:Name="ListaClientes"
+                      HasUnevenRows="True"
+                      ItemSelected="QuandoSelecionarUmItemNaLista"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Fill">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <VerticalStackLayout Padding="20"
+                                                 BackgroundColor="Pink">
+                                <HorizontalStackLayout>
+                                    <Label Text="{Binding Nome}"
+                                           FontSize="20"/>
+                                    <Label Text="{Binding Sobrenome}"
+                                           FontSize="20"
+                                           Margin="10,0,0,0"/>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding Telefone}"
+                                       FontSize="20"/>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
